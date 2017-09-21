@@ -1,0 +1,752 @@
+/*Sean Mullane*/
+/* R00139622*/
+
+ /*General*/
+body, html{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ /*Menu*/
+
+#topmenu li{
+  display: inline-block;
+  background: black;
+  border: solid 2px white;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+#topmenu li a{
+  color: white;
+
+}
+
+#topmenu #menu1{
+  color: white;
+  padding-top: 12px;
+  position: absolute;
+  z-index: 1;
+}
+
+#topmenu #menu2{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+
+#topmenu #menu3{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+
+#topmenu #menu4{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+
+#topmenu:hover #menu2{
+  margin-left: 80px;
+}
+
+#topmenu:hover #menu3{
+  margin-left: 160px;
+}
+
+#topmenu:hover #menu4{
+  margin-left: 240px;
+}
+
+ /*Page 1*/
+#enter {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    border: solid 3px white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#text a{
+  color: white;
+}
+
+#ImageOverflow{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imageOne{
+  background-image: url(water.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#imageTwo{
+  background-image: url(desert.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#imageThree{
+  background-image: url(snowing.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: -200%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#imageFour{
+  background-image: url(sun.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: -300%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#images{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: images 17s infinite;
+  animation: images 17s infinate;
+  transform: translateX(-100%);
+
+
+}
+
+@keyframes images {
+     0%  {right: -100%; }
+    15%  {right: -100%; }
+    30%  {right: 0%; }
+    45%  {right: 0%; }
+    60%  {right: 100%;}
+    75%  {right: 100%;}
+    90%  {right: 200%;}
+    95%  {right: 200%;}
+    100% {right: -100%; }
+
+}
+
+h2{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+}
+ /*Page 3 animation*/
+
+#animation{
+  width: 700px;
+  height: 80%;
+  margin-left: 50.5%;
+  transform: translate(-50.5%);
+
+}
+
+
+#animation li{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  background:red;
+  background-image: url(water.jpg);
+  background-repeat: -repeat;
+  overflow: hidden;
+  margin: 5px;
+}
+
+#animation li:nth-child(1){
+  margin-left: 37%;
+  background-position: bottom -860px left -21.25px;
+}
+
+#animation li:nth-child(2){
+  margin-left: 25%;
+  background-position: bottom -900px left -42.5px;
+}
+
+#animation li:nth-child(3){
+  background-position: bottom -900px left -192.5px;
+}
+
+#animation li:nth-child(4){
+  margin-left: 12%;
+  background-position: bottom -1000px left -75px;
+}
+
+#animation li:nth-child(5){
+  background-position: bottom -1000px left -225px;
+}
+
+#animation li:nth-child(6){
+    background-position: bottom -1000px left -375px;
+}
+
+#animation li:nth-child(7){
+  background-position: bottom -1100px left 0px;
+}
+
+#animation li:nth-child(8){
+  background-position: bottom -1100px left -150px;
+}
+
+#animation li:nth-child(9){
+  background-position: bottom -1100px left -300px;
+}
+#animation li:nth-child(10){
+  background-position: bottom -1100px left -450px;
+
+}
+
+#animation li:nth-child(1) .door{
+  background-position: bottom -600px left -225px;
+}
+
+#animation li:nth-child(2) .door{
+  background-position: bottom -700px left -150px;
+}
+
+#animation li:nth-child(3) .door{
+  background-position: bottom -700px left -300px;
+}
+
+#animation li:nth-child(4) .door{
+
+  background-position: bottom -800px left -64px;
+}
+
+#animation li:nth-child(5) .door{
+  background-position: bottom -800px left -225px;
+}
+
+#animation li:nth-child(6) .door{
+    background-position: bottom -800px left -375px;
+}
+
+#animation li:nth-child(7) .door{
+  background-position: bottom -900px left 0px;
+}
+
+#animation li:nth-child(8) .door{
+  background-position: bottom -900px left -150px;
+}
+
+#animation li:nth-child(9) .door{
+  background-position: bottom -900px left -300px;
+}
+#animation li:nth-child(10) .door{
+  background-position: bottom -900px left -450px;
+
+}
+.door {
+  width: 200px;
+  height: 150px;
+  background: blue;
+  background-image: url(lake.jpg);
+  position: absolute;
+  transition: 1s ease-in;
+}
+
+#animation:hover .door {
+  transition: 1s ease-in;
+  margin-left: 100%;
+}
+
+#news{
+  background: black;
+  padding-top: 1px;
+  width: 100%;
+  height: 150%;
+
+}
+
+ /*page 2 cork news*/
+
+#titles{
+  width: 1080px;
+  height: 100%;
+  margin-left: 50%;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(-50%);
+}
+
+h3{
+  font-size: 80px;
+  color: white;
+  margin-left: 31%;
+  position: relative;
+  transform: translate(-31%);
+}
+
+#local{
+  margin-top: 10px;
+  background-image: url(sun.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 360px;
+  position: absolute;
+  overflow: hidden;
+}
+
+#local2{
+  margin-top: 10px;
+  background: red;
+  height: 200px;
+  width: 360px;
+  position: absolute;
+  opacity: 0.5;
+  overflow: hidden;
+
+}
+
+#local3{
+  position: absolute;
+  margin-top: 164px;
+  margin-left: 270px;
+  overflow: hidden;
+  width: 130px;
+
+}
+
+#localdays{
+  color: black;
+  background: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+#local2 p{
+  font-size: 40px;
+  color: white;
+  margin-left: 2%;
+}
+#local2:hover{
+  opacity: 0.2;
+}
+
+#local2:hover p{
+  font-family: fantasy;
+}
+
+#gigs{
+  margin-top: 10px;
+  margin-left: 360px;
+  height: 200px;
+  width: 360px;
+  position: absolute;
+  background-image: url(water.jpg);
+
+}
+
+#gigs2{
+  margin-top: 10px;
+  margin-left: 360px;
+  background: green;
+  height: 200px;
+  width: 360px;
+  position: absolute;
+  opacity: 0.8;
+}
+
+#gigs2 p{
+  font-size: 40px;
+  color: white;
+  margin-left: 2%;
+
+}
+
+#gigs3{
+  position: absolute;
+  margin-top: 164px;
+  margin-left: 640px;
+  overflow: hidden;
+  width: 130px;
+
+}
+
+#gigsdays{
+  color: black;
+  background: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  height: 100px;
+  width: 120%;
+  opacity: 0.9;
+
+}
+
+#gigs2:hover{
+  opacity: 0.6;
+}
+
+#gigs2:hover p{
+  font-family: fantasy;
+}
+
+#jobs{
+  margin-top: 10px;
+  margin-left: 720px;
+  background-image: url(desert.jpg);
+  height: 200px;
+  width: 360px;
+  position: absolute;
+}
+
+#jobs2{
+  margin-top: 10px;
+  margin-left: 720px;
+  background: blue;
+  height: 200px;
+  width: 360px;
+  position: absolute;
+  opacity: 0.4;
+}
+
+#jobs2 p{
+  margin-left: 2%;
+  font-size: 40px;
+  color: white;
+}
+
+#jobs3{
+  position: absolute;
+  margin-top: 164px;
+  margin-left: 1000px;
+  overflow: hidden;
+  width: 130px;
+
+}
+
+#jobsdays{
+  color: black;
+  background: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+#jobs2:hover{
+  opacity: 0.3;
+}
+
+#jobs2:hover p{
+  font-family: fantasy;
+}
+
+#paragraph{
+  background: white;
+  margin-top: 200px;
+  width: 1080px;
+  height: 343px;
+  margin-left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+
+}
+
+#textparagraph{
+  width: 80%;
+  margin-left: 5%;
+  background: red;
+
+}
+
+#textone{
+  width: 320px;
+  height: 250px;
+  top: 50px;
+  position: absolute;
+}
+
+#texttwo{
+  margin-left: 340px;
+  top:1px;
+  width: 320px;
+  height: 250px;
+  position: absolute;
+}
+
+#textthree{
+  top: 1px;
+  margin-left: 65%;
+  width: 26.66%;
+  position: absolute;
+}
+
+#paragraph h3 {
+  color: black;
+  margin-top: 10px;
+  width: 0;
+  font-size: 30px;
+  margin-left: 5%;
+
+}
+
+#social{
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  margin-top: 430px;
+  margin-left: 900px;
+
+}
+
+#facebook{
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  background-image: url(facebook.png);
+  background-size: cover;
+
+}
+
+#facebook:hover{
+  opacity: 0.8;
+}
+
+#twitter{
+  margin-top: -44px;
+  margin-left: 125px;
+  width: 40px;
+  height: 40px;
+  background-image: url(twi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#twitter:hover{
+  opacity: 0.8;
+}
+
+#google{
+  margin-top: -40px;
+  margin-left: 200px;
+  width: 40px;
+  height: 40px;
+  background-image: url(google.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#google:hover{
+  opacity: 0.8;
+}
+
+
+ /*Responsive */
+
+@media (max-width: 500px) {
+
+  #animation{
+    width: 560px;
+    height: 80%;
+    margin-left: 50.5%;
+    transform: translate(-50.5%);
+
+  }
+
+  #animation li:nth-child(1){
+    margin-left: 1%;
+    background-position: bottom -900px left -21.25px;
+  }
+
+
+  #animation li:nth-child(2){
+    margin-left: 1%;
+    background-position: bottom -900px left -42.5px;
+  }
+
+  #animation li:nth-child(3){
+    background-position: bottom -900px left -192.5px;
+  }
+
+  #animation li:nth-child(4){
+    margin-left: 1%;
+    background-position: bottom -1000px left -75px;
+  }
+
+  #animation li:nth-child(10){
+    margin-left: 30%;
+    background-position: bottom -1200px left -155px;
+  }
+
+  #animation li:nth-child(10) .door{
+    background-position: bottom -1000px left -155px;
+
+  }
+}
+
+@media  (max-width: 960px) {
+
+  #news{
+    height: 250%;
+    width: 110%;
+  }
+
+  #local{
+    margin-top: -5px;
+    background-image: url(sun.jpg);
+    background-size: 880px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 10%;
+
+  }
+
+  #local2{
+    margin-top: -5px;
+    background: red;
+    height: 200px;
+    width: 880px;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+    margin-left: 10%;
+
+  }
+
+  #local3{
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 83.8%;
+    overflow: hidden;
+    width: 84px;
+
+  }
+
+  #gigs{
+    margin-top: 195px;
+    margin-left: 10%;
+    height: 200px;
+    width: 450px;
+    position: absolute;
+    background-image: url(water.jpg);
+
+  }
+
+  #gigs2{
+    margin-top: 195px;
+    margin-left: 10%;
+    background: green;
+    height: 200px;
+    width: 450px;
+    position: absolute;
+    opacity: 0.8;
+  }
+
+  #gigs3{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 44%;
+    overflow: hidden;
+    width: 130px;
+
+  }
+
+  #jobs{
+    margin-top: 195px;
+    margin-left: 51%;
+    background-image: url(desert.jpg);
+    height: 200px;
+    width: 440px;
+    position: absolute;
+  }
+
+  #jobs2{
+    margin-top: 195px;
+    margin-left: 51%;
+    background: blue;
+    height: 200px;
+    width: 440px;
+    position: absolute;
+    opacity: 0.4;
+  }
+
+
+  #jobs3{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 84%;
+    overflow: hidden;
+    width: 84px;
+
+  }
+
+  #paragraph{
+    background: white;
+    margin-top: 390px;
+    width: 883px;
+    height: 700px;
+    margin-left: 51%;
+    position: absolute;
+
+  }
+
+
+  #texttwo{
+    margin-left: 1px;
+    margin-top:350px;
+    width: 320px;
+    height: 250px;
+    position: absolute;
+  }
+
+
+
+}
